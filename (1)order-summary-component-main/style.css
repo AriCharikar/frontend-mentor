@@ -1,0 +1,234 @@
+body {
+    background: #F2F2F2;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.card {
+    width: 450px;
+    height: 697px;
+    border-radius: 2rem;
+    background: white;
+}
+
+.card--image {
+    background: url('./images/illustration-hero.svg');
+    width: 450px;
+    height: 220px;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.card--text-div {
+    height: 467px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.background--pattern {
+    background: url('./images/pattern-background-desktop.svg');
+    width: 100%;
+    height: 437px;
+    margin-top: -100px;
+    z-index: -1;
+    position: fixed;
+}
+
+.card--title {
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 37px;
+    text-align: center;
+    color: #1F2E55;
+}
+
+.card--p {
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    width: 75%;
+    margin: -25px auto 0;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #717FA6;
+}
+
+.card--plan-div {
+    width: 354px;
+    height: 98px;
+    margin: 0 auto;
+    background: #F7F9FF;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card--plan-subdiv1 {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: 25px;
+}
+
+.card--plan-h4 {
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 21px;
+    color: #1F2E55;
+    margin: 0;
+}
+
+.card--plan-p {
+    margin: 0;
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #717FA6;
+}
+
+.card--plan {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card--plan-button {
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    border: none;
+    text-decoration: none;
+    margin-right: 20px;
+    background: #F7F9FF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #382AE1;
+    transition: 0.2s ease-in-out all;
+}
+.card--plan-button:hover, .card--plan-button:focus {
+    color: #766CF1;
+    text-decoration-line: none;
+}
+
+.card--proceed {
+    background: #382AE1;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    border-radius: 11px;
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    border: none;
+    width: 354px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    transition: 0.2s ease-in-out all;
+}
+
+.card--proceed:hover, .card--proceed:focus {
+    background: #766CF1;
+}
+
+.card--cancel {
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    color: #717FA6;
+    background: white;
+    border: none;
+    transition: 0.2s ease-in-out all;
+}
+
+.card--cancel:hover, .card--cancel:focus {
+    color: #1F2E55;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    body {
+        background: #D6E1FF;
+    }
+    .card {
+        width: 327px;
+        height: 567px;
+    }
+    .card--image {
+        width: 327px;
+        height: 160px;
+        background-size: contain;
+    }
+
+    .card--title {
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .card--text-div {
+        height: 407px;
+    }
+    
+    .card--p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .card--plan-div {
+        width: 279px;
+        height: 81px;
+    }
+    .card--plan-subdiv1 {
+        margin-left: 10px;
+    }
+    .card--plan-h4 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .card--plan-p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .card--plan-button {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .card--proceed {
+        font-size: 15px;
+        line-height: 20px;
+        width: 279px;
+        height: 50px;
+    }
+    .background--pattern {
+        width: 0%;
+    }
+}
