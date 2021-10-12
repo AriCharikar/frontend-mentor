@@ -1,0 +1,12 @@
+button {
+    @include buttonStructure;
+    span {
+        color: rgb(219, 219, 219);
+    }
+}
+
+
+
+.button-purp {
+    @include buttonStructure($colorButton: $purple, $hoverColor: $lightpurple);
+}

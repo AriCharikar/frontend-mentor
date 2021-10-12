@@ -1,0 +1,35 @@
+h1 {
+    width: 80%;
+    text-align: center;
+    line-height: 64px;
+    font-size: $title;
+    font-family: $defaultFont;
+    font-weight: $heavy;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: $subHeader;
+}
+
+.experience--header {
+    color: $white;
+    text-align: left;
+}
+
+p {
+    text-align: center;
+    font-size: $paragraph;
+    font-family: $defaultFont;
+    font-weight: $regular;
+    color: $gray;
+}
+
+.information--overline {
+    font-size: 20px;
+    color: $turquoise;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}

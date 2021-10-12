@@ -1,0 +1,16 @@
+@mixin buttonStructure($colorButton: $turquoise, $hoverColor: $lightblue) {
+    background: $colorButton;
+    border-radius: 29px;
+    padding: 17px 30px;
+    margin: 10px;
+    border: none;
+    color: white;
+    font-weight: $heavy;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+        background: $hoverColor;
+    }
+}
+
